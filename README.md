@@ -13,18 +13,18 @@ I created this project because I wanted to get started with Docker and docker-co
 
 ## building the image and running the container
 In the root of the project use:
-
+```
   docker-compose up -d --build
-
+```
 ## configuration
 This section explains some of the configuration.
 
 ### Audio device
 The configuration in this project uses an external audiocard. In order to use the internal audiocard you can chance the values of spotify/asound.conf to:
-
+```
   defaults.pcm.card 0
   defaults.ctl.card 0
-
+```
 ### Start script
 In start.sh you can edit the device name of the Spotify connect speaker as well as adding your Spotify premium credentials so you can access the speaker everywhere you go.
 
