@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Set device name
-DEVICE_NAME="Stijn music box"
+DEVICE_NAME="Raspotify container"
 
 # Set Spotify login
 #SPOTIFY_LOGIN=""
