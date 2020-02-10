@@ -1,0 +1,13 @@
+version: '2'
+services:
+  spotify:
+    build: ./spotify
+    restart: always
+    network_mode: host
+    privileged: true
+    devices:
+      - "/dev/snd:/dev/snd"
+    volumes:
+      - spotifycache:/var/cache/raspotify
+volumes:
+  spotifycache:
